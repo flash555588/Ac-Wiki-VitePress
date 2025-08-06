@@ -1,0 +1,81 @@
+/* stylelint-disable selector-class-pattern */
+/* 主题增强样式 */
+
+/* 菜单组标题样式 */
+.VPMenuGroup > .title {
+    font-size: 0.7em;
+}
+
+/* 文档链接样式 */
+.vp-doc a {
+    background: linear-gradient(var(--vp-c-brand-soft), var(--vp-c-brand-soft)) no-repeat center bottom / 100% 2px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.vp-doc a:hover {
+    border-radius: 0.2em;
+    background: linear-gradient(var(--vp-c-brand-soft), var(--vp-c-brand-soft)) no-repeat center bottom / 100% 100%;
+}
+
+/* 强调文本样式 */
+.vp-doc strong {
+    background: linear-gradient(var(--vp-c-brand-soft), var(--vp-c-brand-soft)) no-repeat center bottom / 100% 40%;
+}
+
+/* 删除线样式 */
+.vp-doc s {
+    opacity: 0.6;
+}
+
+/* 自定义容器样式 */
+.vp-doc .custom-block {
+    padding: 8px 16px;
+}
+
+.vp-doc .custom-block :first-child:first-child {
+    margin: 8px 0;
+}
+
+/* 首页 Feature 图标样式 */
+.VPFeature {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.VPFeature .icon {
+    position: absolute;
+    opacity: 0.15;
+    right: 10%;
+    background-color: transparent;
+    font-size: 8em;
+    z-index: -1;
+}
+
+/* 文档二级标题编号 */
+.vp-doc {
+    counter-reset: section-counter;
+}
+
+.vp-doc h2 {
+    counter-increment: section-counter;
+}
+
+.vp-doc h2::before {
+    content: counter(section-counter);
+    position: absolute;
+    left: -2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--vp-c-divider);
+    z-index: -1;
+}
+
+.VPBadge {
+    margin: 0 0.1em;
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+    line-height: 1.2;
+    transform: translateY(-0.1em);
+} 
