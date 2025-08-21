@@ -6,7 +6,8 @@
     "github": "NekoMirra",
     "qq": "123456789",
     "linkText": "博客",
-    "link": "https://mirradev.eu.org/rss/feed.xml"
+    "link": "https://mirradev.eu.org"
+    "feed": "https://mirradev.eu.org/rss/feed.xml"
   },
   {
     "author": "ztm0929",
