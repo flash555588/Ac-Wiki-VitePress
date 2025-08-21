@@ -1,15 +1,15 @@
 [
   
   {
-    "name": "NekoMirra",
+    "author": "NekoMirra",
     "title": "发起人",
     "github": "NekoMirra",
     "qq": "123456789",
     "linkText": "博客",
-    "link": "https://mirradev.eu.org/"
+    "link": "https://mirradev.eu.org/rss/feed.xml"
   },
   {
-    "name": "ztm0929",
+    "author": "ztm0929",
     "title": "成员",
     "github": "ztm0929",
     "qq": "987654321",
@@ -17,7 +17,7 @@
     "link": "https://github.com/ztm0929"
   },
   {
-    "name": "anchoringpoint",
+    "author": "anchoringpoint",
     "title": "成员",
     "github": "anchoringpoint",
     "qq": "555666777",
@@ -25,7 +25,7 @@
     "link": "https://github.com/anchoringpoint"
   },
   {
-    "name": "mekomimi",
+    "author": "mekomimi",
     "title": "成员",
     "github": "mekomimi", 
     "qq": "888999000",
