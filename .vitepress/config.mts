@@ -356,6 +356,7 @@ function communityHubSidebar(): DefaultTheme.SidebarItem[] {
                         { text: '贡献指南', link: '/community-hub/contribute' },
                         { text: '加入共建', link: '/community-hub/CONTRIBUTING' },
                         { text: 'Markdown 指南', link: '/community-hub/markdown-guide' },
+                        { text: '高级组件指南', link: '/community-hub/advanced-components' },
                     ]
                 },
                 {

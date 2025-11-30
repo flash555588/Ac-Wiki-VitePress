@@ -20,7 +20,8 @@ function isExtLink(link?: string) {
 }
 
 const authors = computed(() => {
-  const list = (frontmatter.value.author as unknown as string[]) || []
+  const author = frontmatter.value.author
+  const list = Array.isArray(author) ? author : (author ? [author] : [])
   return list.map(getAuthor)
 })
 </script>

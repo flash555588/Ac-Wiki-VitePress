@@ -1,17 +1,31 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useData } from 'vitepress'
+
 const props = defineProps<{
   /** 自定义 Logo 图片地址（如 /logo.png 或 https://...） */
   src?: string
   /** 图片替代文本 */
   alt?: string
 }>()
+
+const { theme } = useData()
+
+const logoSrc = computed(() => {
+  if (props.src) return props.src
+  const logo = theme.value.logo
+  // 支持字符串或对象配置 (light/dark)
+  if (typeof logo === 'string') return logo
+  if (typeof logo === 'object') return logo.src || logo.light
+  return undefined
+})
 </script>
 
 <template>
   <img
-    v-if="props.src"
+    v-if="logoSrc"
     class="logo"
-    :src="props.src"
+    :src="logoSrc"
     :alt="props.alt ?? 'logo'"
     loading="lazy"
     decoding="async"
